@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Primeiros Passos com DOM</title>
     <style>
         body {
-            background-color: rgb(69, 179, 239);
+            background: #162309;
             color: white;
+            font: normal 18pt Arial;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Me livrei da maldição </p>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em min</div>
     <script>
-        window.alert('Hello, World!')
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual o seu nome?')
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'Blue'
     </script>
 </body>
 </html>
