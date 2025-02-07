@@ -1,11 +1,9 @@
-function verificar(){
-    var pais = document.getElementById("pais").value;
-    var res = document.getElementById("res");
-    if(pais == 'Brasil'){
-        res.innerHTML = `Nasceu no ${pais}!`;
-        res.innerHTML += `<p>Você é Brasileiro!</p>`;
-    } else {
-        res.innerHTML = `Nasceu no ${pais}!`;
-        res.innerHTML += `<p>Você é Estrangeiro!</p>`;
-    }
+var idade = 67
+console.log(`Você tem ${idade} anos.`)
+if(idade < 16){
+    console.log('Não vota')
+} else if(idade < 18 || idade > 65){
+    console.log('Voto opcional')
+} else{
+    console.log('Voto obrigatório')
 }
