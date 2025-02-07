@@ -3,43 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOM</title>
-    <Style>
-        div#area {
-            font: normal 20pt arial;
-            background: rgb(42, 139, 42);
-            color: white;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 18pt arial;
         }
-    </Style>
+        input {
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="area">
-        Interaja..
-    </div>
-
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div> 
     <script>
-        var area = document.getElementById('area');
+        function somar(){
+            var txtn1 = document.getElementById('txtn1')
+            var txtn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+            var s = n1 + n2
 
-        area.addEventListener('click', clicar)
-        area.addEventListener('mouseenter', entrar)
-        area.addEventListener('mouseout', sair)
-
-        function clicar(){
-            area.innerText = 'Clicou!';
-            area.style.background = 'red';
-        }
-
-        function entrar(){
-            area.innerText = 'Entrou!';
-        }
-
-        function sair(){
-            area.innerText = 'Saiu!';
-            area.style.background = 'green';
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
     </script>
 </body>
