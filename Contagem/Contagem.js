@@ -13,10 +13,16 @@ function Contar(){
 
         res.innerHTML = ""
 
-        while(i <= f){
-            res.innerHTML += `${i}👉`
-            i += p
+        if(i < f){
+            while(i <= f){
+                res.innerHTML += `${i}👉`
+                i += p
+            }
+        } else {
+            while(i >=f){
+                res.innerHTML += `${i}👉`
+                i -= p
+            }
         }
-        res.innerHTML += '🏁'
-    }
+    }res.innerHTML += '🏁'
 }
