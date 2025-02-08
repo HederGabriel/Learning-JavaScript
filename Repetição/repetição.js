@@ -15,8 +15,12 @@ do {
 */
 
 /* For(Inicializa, testa, incrementa)
-for(var c=1;c<10;c++){
-    ...
+for(var c= 1; c <= 5; c++){
+    console.log(c)
 }
 
 */
+
+for(var c= 1; c <= 5; c++){
+    console.log(c)
+}
