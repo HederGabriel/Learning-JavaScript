@@ -6,6 +6,7 @@ function gerarTabuada(){
         window.alert('[ERRO] Por favor, digite um número válido!')
     } else{
         num = Number(num.value)
+        
         var i = 1
         res.innerHTML = ''
         while(i <=10){
