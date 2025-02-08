@@ -6,7 +6,7 @@ while(c <= 1){
 }
 */
 
-/* do(Test no final)
+/* do while(Test no final)
 var c = 1
 do {
     console.log(`Passo ${c}`)
