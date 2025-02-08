@@ -1,7 +1,7 @@
 function gerarTabuada(){
     var num = document.getElementById('num')
     var res = document.getElementById('res')
-
+    
     if(num.value.length == 0 || num.value == 0){
         window.alert('[ERRO] Por favor, digite um número válido!')
     } else{
