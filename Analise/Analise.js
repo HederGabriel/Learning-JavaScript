@@ -25,6 +25,7 @@ function finalizar(){
     if(lista.length === 0){
         window.alert(`Não a nenhum número cadastrado`)
     } else{
+        
         var fim = document.getElementById('fim')
         var maior = Math.max(...lista)
         var menor = Math.min(...lista)
